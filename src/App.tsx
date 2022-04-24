@@ -1,38 +1,34 @@
 import * as React from "react"
 import {
   ChakraProvider,
-  Box,
   Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
 } from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Logo } from "./Logo"
+import Navbar from "./Components/Navbar/Navbar"
+import Header from "./Components/Header/Header"
+import Newsletter from "./Components/Newsletter/Newsletter"
+import UnderNewsletter from "./Components/underNewsletter/underNewsletter"
+import BigInfo from "./Components/Biginfo/BigInfo"
+import Slider from "./Components/Slider/Slider"
+import TalentComponent from "./Components/Talent/TalentComponent"
+import NeedTalentComponent from "./Components/NeedTalentComponent/NeedTalentComponent"
+import IntroducingTalent from "./Components/IntroducingTalent/IntroducingTalent"
+import Opinions from "./Components/Opinions/opinions"
+import Advantages from "./Components/Advantages/Advantages"
+import Blog from "./Components/Blog/Blog"
 
 export const App = () => (
-  <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
-          <Link
-            color="teal.500"
-            href="https://chakra-ui.com"
-            fontSize="2xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Chakra
-          </Link>
-        </VStack>
-      </Grid>
-    </Box>
+  <ChakraProvider>
+    <Navbar/>
+    <Header/>
+    <Newsletter/>
+    <UnderNewsletter />
+    <BigInfo/>
+    <Slider/>
+    <TalentComponent />
+    <NeedTalentComponent />
+    <IntroducingTalent/>
+    <Opinions />
+    <Advantages/>
+    <Blog />
   </ChakraProvider>
 )
