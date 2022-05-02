@@ -11,7 +11,7 @@ export const Newsletter = () => {
     alignItems='center'
     backgroundColor='#ffffff'
     gridGap='20px'>
-        <Input placeholder='Your email' />
+        <Input border='1px solid #848484' _focus={{outline: 'none'}} placeholder='Your email' />
         <Flex gridGap='20px' alignItems='center'>
             <SignUpButton>Sign Up</SignUpButton>
             <Text>or</Text>

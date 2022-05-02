@@ -18,6 +18,7 @@ export const SignUpButton:FC<Props> = ({onClick, children}) => {
     fontSize='14px'
     color='#ffffff'
     _hover={{backgroundColor:'#54CC9E', transition: 'all 300ms ease'}}
+    _focus={{outline: 'none'}}
     >{children}</Button>
   )
 }

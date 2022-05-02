@@ -18,6 +18,7 @@ export const LoginButton:FC<Props> = ({onClick, children}) => {
     fontFamily='Sora'
     fontSize='14px'
     _hover={{backgroundColor:'#54CC9E', transition: 'all 300ms ease'}}
+    _focus={{outline: 'none'}}
     >{children}</Button>
   )
 }
