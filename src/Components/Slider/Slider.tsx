@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Slider = () => {
   return (
-      <Stack borderRadius='5px' borderWidth='1px' margin='10px 80px 0px 80px'padding='30px 40px 30px 40px'> 
+      <Stack borderRadius='5px' borderWidth='1px' margin='10px 80px 0px 80px' padding='30px 40px 30px 40px'> 
     <Flex
     flexDirection='column'
     justifyContent='center'
@@ -23,7 +23,7 @@ export const Slider = () => {
         <Flex
         paddingTop='20px'
         alignItems='center'
-        gridGap='20px'> 
+        gridGap='35px'> 
             <Image src='./assets/partners/postmates.svg' />
             <Image src='./assets/partners/airtable.svg' />
             <Image src='./assets/partners/peloton.svg' />

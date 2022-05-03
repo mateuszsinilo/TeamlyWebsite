@@ -11,6 +11,7 @@ import {
 import SectionText from "../../Components/Typography/SectionText";
 import MenuText from "../../Components/Typography/MenuText";
 import SignUpButton from "../../Components/Buttons/SignupButton";
+import TextSub from "../../Components/Typography/TextSub";
 
 export const LoginPage = () => {
   return (
@@ -21,7 +22,7 @@ export const LoginPage = () => {
       backgroundColor="#ffffff"
     >
       <Flex flexDirection="column" gridGap="20px">
-        <Image src="./assets/images/logos-short.png" w="40px" h="40px" />
+        <Link href='/'><Image src="./assets/images/logos-short.png" w="35px" h="35px" /></Link>
         <SectionText>Login</SectionText>
         <Text>Find a job made for you!</Text>
         <Input
@@ -33,7 +34,7 @@ export const LoginPage = () => {
         />
         <Flex justifyContent="center">
           <Text fontSize="12px" color="#9194a0">
-            Or login in with tibijka
+          or Login with Email
           </Text>
         </Flex>
         <Input
